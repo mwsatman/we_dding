@@ -149,7 +149,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: {{ site.color.title-font1 }}; /*lightsalmon*/
-    background: url(/img/autumn.jpg) no-repeat bottom center scroll;
+    background: url(img/autumn.jpg) no-repeat bottom center scroll;
     background-color: {{ site.color.primary-dark }};
     -webkit-background-size: cover;
     -moz-background-size: cover;
