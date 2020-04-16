@@ -21,18 +21,22 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#about">Pawiwahan</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#invitation">Undangan</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#gallery">Galeri</a>
-                    </li>
-                    <li>
+                    {% if page.lang == "id" %}
+                    <li><a class="page-scroll" href="#about">Pawiwahan</a></li>
+                    <li><a class="page-scroll" href="#announcement">Pesan</a></li>
+                    <li><a class="page-scroll" href="#gallery">Galeri</a></li>
+                    <li><a class="page-scroll" href="/en">en</a></li>
+                    {% endif %}
+
+                    {% if page.lang == "en" %}
+                    <li><a class="page-scroll" href="#about">Pawiwahan</a></li>
+                    <li><a class="page-scroll" href="#announcement">Announcement</a></li>
+                    <li><a class="page-scroll" href="#gallery">Gallery</a></li>
+                    <li><a class="page-scroll" href="/">id</a></li>
+                    {% endif %}
+                    <!-- <li>
                         <a class="page-scroll" href="#access">Akses</a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

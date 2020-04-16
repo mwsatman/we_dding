@@ -1,18 +1,27 @@
     <!-- About Section -->
     <section id="about" class="container content-section text-center">
         <div class="row">
+            {% if page.lang == "id" %}
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>PAWIWAHAN</h2>
                 <h2 class="handwrite-1">Made <strong>Widhi</strong> Surya Atman</h2>
                 <p> Putra kedua dari pasangan <br> I Made Suarta &amp; Ni Luh Putu Sulastri <br> Ubung Kaja, Denpasar </p>
-            <!-- </div>
-            <div class="col-lg-8 col-lg-offset-2"> -->
                 <p> dengan </p>
-            <!-- </div>
-            <div class="col-lg-8 col-lg-offset-2"> -->
                 <h2 class="handwrite-1">Pande Putu <strong>Era</strong>wijantari</h2>
                 <p> Putri pertama dari pasangan <br> I Putu Sukarta (Swargi) &amp; Ni Wayan Somowirati <br> Kediri, Tabanan </p>
             </div>
+            {% endif %}
+
+            {% if page.lang == "en" %}
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>PAWIWAHAN (Marriage)</h2>
+                <h2 class="handwrite-1">Made <strong>Widhi</strong> Surya Atman</h2>
+                <p> Second son of <br> I Made Suarta &amp; Ni Luh Putu Sulastri <br> Ubung Kaja, Denpasar </p>
+                <p> with </p>
+                <h2 class="handwrite-1">Pande Putu <strong>Era</strong>wijantari</h2>
+                <p> First daughter of <br> I Putu Sukarta (Swargi) &amp; Ni Wayan Somowirati <br> Kediri, Tabanan </p>
+            </div>
+            {% endif %}
         </div>
     </section>
 

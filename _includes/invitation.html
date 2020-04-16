@@ -1,25 +1,44 @@
     <!-- Contact Section -->
-    <section id="invitation" class="container content-section text-center">
+    <section id="announcement" class="container content-section text-center">
         <div class="row">
             <div class="col-xs-12 col-lg-5 adjusted_img">
                 <img src={{ page.invimg }} alt="" title="" width="100%">
                 <h2></h2>
             </div>
             <div class="col-xs-12 col-lg-7">
-                <p>Atas Asung Kertha Wara Nugraha Ida Sang Hyang Widhi Wasa/ Tuhan Yang Maha Esa, Kami bermaksud menyelenggarakan upacara Manusa Yadnya Pawiwahan (Pernikahan) putra-putri kami</p>
-                <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami sekeluarga apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu pada:</p>
-                <hr class="line" style="width: 75%;">
-                <h2 style="margin: 0px">Rabu, 8 April 2020</h2>
-                <p>Pukul: {{ page.invtime }} WITA ~ selesai</p>
-                <p>Bertempat di <br>
-                    Jl. Karya Makmur, Gg. Kelapa Gading, Br. Pemangkalan, <br>
-                    Ubung Kaja, Denpasar</p>
-                <hr class="line" style="width: 75%;">
-                <p>Atas kehadiran dan doa restu Bapak/Ibu/Saudara/i, kami haturkan terima kasih.</p>
-                <p>Kami yang berbahagia,</p>
-                <div class="column"><p>Kel. I Made Suarta &amp; <br> Ni Luh Putu Sulastri</p></div>
-                <div class="column"><p>Kel. I Putu Sukarta (Swargi) &amp; <br> Ni Wayan Somowirati</p></div>
-                <p class="handwrite-1">Widhi &amp; Era</p>
+                {% if page.lang == "en" %}
+                    <p>With great joy, we are happy to announce the marriage of our children, <br>
+                    Made Widhi Surya Atman and Pande Putu Erawijantari, on the</p>
+                    <hr class="line" style="width: 75%;">
+                    <h2 style="margin: 0px">Wednesday, 8 April 2020</h2>
+                    <p>at <br>
+                        Jl. Karya Makmur, Gg. Kelapa Gading, Br. Pemangkalan, <br>
+                        Ubung Kaja, Denpasar</p>
+                    <hr class="line" style="width: 75%;">
+                    <p>We deeply apologize that due to the spread of covid-19 pandemic, we were not able to invite any guest during the wedding ceremony.</p>
+                    <p>We thank you for your understanding and thank you so much for your love and support that brought us to this day!</p>
+                    <p>With love,</p>
+                    <div class="column"><p>Family of I Made Suarta &amp; <br> Ni Luh Putu Sulastri</p></div>
+                    <div class="column"><p>Family of I Putu Sukarta (deceased) &amp; <br> Ni Wayan Somowirati</p></div>
+                    <p class="handwrite-1">Widhi &amp; Era</p>
+                {% endif %}
+
+                {% if page.lang == "id" %}
+                    <p>Atas Asung Kertha Wara Nugraha Ida Sang Hyang Widhi Wasa/ Tuhan Yang Maha Esa, Kami bermaksud mengumumkan upacara Manusa Yadnya Pawiwahan (Pernikahan) putra-putri kami yang telah dilaksanakan pada:</p>
+                    <hr class="line" style="width: 75%;">
+                    <h2 style="margin: 0px">Rabu, 8 April 2020</h2>
+                    <p>Bertempat di <br>
+                        Jl. Karya Makmur, Gg. Kelapa Gading, Br. Pemangkalan, <br>
+                        Ubung Kaja, Denpasar</p>
+                    <hr class="line" style="width: 75%;">
+                    <p>Kami memohon maaf sebesar-besarnya karena tidak dapat mengundang Bapak/Ibu/Saudara/i. 
+                    Upacara kami adakan dalam skala yang diperkecil dikarenakan kondisi pandemik covid-19.</p>              
+                    <p>Atas permakluman dan doa restu Bapak/Ibu/Saudara/i, kami haturkan terima kasih.</p>
+                    <p>Kami yang berbahagia,</p>
+                    <div class="column"><p>Kel. I Made Suarta &amp; <br> Ni Luh Putu Sulastri</p></div>
+                    <div class="column"><p>Kel. I Putu Sukarta (Swargi) &amp; <br> Ni Wayan Somowirati</p></div>
+                    <p class="handwrite-1">Widhi &amp; Era</p>
+                {% endif %}
             </div>
 
         </div>
